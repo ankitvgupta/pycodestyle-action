@@ -3,7 +3,11 @@ A Github Action that runs pycodestyle and leave a comment on your pull request
 
 
 ## Example
-Add the following to `.github/workflows/myworkflow.yml`
+Add the following to `.github/workflows/myworkflow.yml`.
+
+Note that the PRECOMMAND_MESSAGE variable is optional. If you set it, it will print before your
+the code errors. For example, this is helpful if you want to print a message to refer the user
+to any tools you have for managing style errors.
 
 ``` 
 on: [pull_request]
@@ -18,4 +22,5 @@ jobs:
       uses: ankitvgupta/pycodestyle-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PRECOMMAND_MESSAGE: You have style errors. See them below.
 ```
