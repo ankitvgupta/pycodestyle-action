@@ -8,6 +8,8 @@ if [[ -z "$GITHUB_TOKEN" ]]; then
 	exit 1
 fi
 
+cd $GITHUB_WORKSPACE
+
 set +e
 OUTPUT=$(pycodestyle .)
 SUCCESS=$?

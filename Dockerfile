@@ -15,7 +15,5 @@ LABEL com.github.actions.color="purple"
 RUN apk add jq curl
 
 RUN pip install pycodestyle
-WORKDIR /github/workspace
 COPY entrypoint.sh .
-
 ENTRYPOINT ["./entrypoint.sh"]
