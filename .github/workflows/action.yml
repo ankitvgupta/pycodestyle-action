@@ -1,5 +1,5 @@
 on: [pull_request]
-Name: Python Style Check
+name: Python Style Check
 jobs:
   pycodestyle:
     name: pycodestyle
