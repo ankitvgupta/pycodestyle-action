@@ -23,7 +23,7 @@ if [ $SUCCESS -ne 0 ]; then
   echo $COMMENTS_URL
   curl -s -S -H "Authorization: token $GITHUB_TOKEN" --header "Content-Type: application/json" --data "$PAYLOAD" "$COMMENTS_URL" > /dev/null
 else
-  echo "There were not linting issues"
+  echo "There were no pycodestyle issues"
 fi
 exit $SUCCESS
 
