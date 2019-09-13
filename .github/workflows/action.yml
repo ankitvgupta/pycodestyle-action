@@ -7,4 +7,6 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: pycodestyle
-      uses: docker://ankitvgupta/pycodestyle
+      uses: ankitvgupta/pycodestyle-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
