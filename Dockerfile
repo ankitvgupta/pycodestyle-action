@@ -16,6 +16,6 @@ LABEL com.github.actions.color="purple"
 
 RUN pip install pycodestyle
 WORKDIR /github/workspace
-COPY "entrypoint.sh" "/entrypoint.sh"
+COPY entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]
