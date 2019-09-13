@@ -7,6 +7,7 @@ Add the following to `.github/workflows/myworkflow.yml`
 
 ``` 
 on: [pull_request]
+name: Python Style Check
 jobs:
   pycodestyle:
     name: pycodestyle
