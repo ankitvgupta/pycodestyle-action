@@ -12,7 +12,7 @@ LABEL com.github.actions.description="Run Pycodestyle on pull request"
 LABEL com.github.actions.icon="git-pull-request"
 LABEL com.github.actions.color="purple"
 
-
+RUN apk add jq curl
 
 RUN pip install pycodestyle
 WORKDIR /github/workspace
