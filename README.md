@@ -4,7 +4,7 @@ A Github Action that runs pycodestyle and leaves a comment on your pull request.
 ## Example
 Add the following to `.github/workflows/myworkflow.yml`.
 
-Note that the PRECOMMAND_MESSAGE variable is optional. If you set it, it will print before your
+Note that the PRECOMMAND_MESSAGE variable is optional. If you set it, it will print before 
 the code errors. For example, this is helpful if you want to print a message to refer the user
 to any tools you have for managing style errors.
 
