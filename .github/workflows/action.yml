@@ -7,7 +7,8 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: pycodestyle
-      uses: ankitvgupta/pycodestyle-action@master
+      #uses: ankitvgupta/pycodestyle-action@master
+      uses: docker://docker.pkg.github.com/ankitvgupta/pycodestyle-action/app:1.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PRECOMMAND_MESSAGE: You have style errors. See them below.
