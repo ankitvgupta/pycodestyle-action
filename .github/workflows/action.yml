@@ -9,5 +9,11 @@ jobs:
     - name: Current dir
       run: |
           ls
+    - name: present dir
+      run: |
+          pwd
+    - name: env
+      run: |
+          env
     - name: pycodestyle
       uses: docker://ankitvgupta/pycodestyle
