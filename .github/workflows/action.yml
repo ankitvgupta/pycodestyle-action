@@ -7,4 +7,4 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: pycodestyle
-      uses: ankitvgupta/pycodestyle-action@master
+      uses: ankitvgupta/pycodestyle-action@newtest
