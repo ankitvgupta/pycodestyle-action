@@ -8,4 +8,5 @@ jobs:
     - uses: actions/checkout@master
     - name: pycodestyle
       uses: ankitvgupta/pycodestyle-action@newtest
-      secrets: ["GITHUB_TOKEN"]
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
