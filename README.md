@@ -1,6 +1,5 @@
 # pycodestyle-action
-A Github Action that runs pycodestyle and leave a comment on your pull request
-
+A Github Action that runs pycodestyle and leaves a comment on your pull request.
 
 ## Example
 Add the following to `.github/workflows/myworkflow.yml`.
@@ -24,3 +23,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PRECOMMAND_MESSAGE: You have style errors. See them below.
 ```
+
+### Acknowledgements
+ - https://github.com/jwr0/dockerfile-linter-action was a helpful resource in writing the Github API Calls.
+
